@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+
+  
+}
+.AppDark{
+  background-color: rgb(32, 32, 32);
+  
+  h1,h2,h3,h4{
+    color: rgb(230, 230, 230);
+  }
+  button{
+    color: rgb(230, 230, 230);
+    border: none;
+    &:hover{
+      background: white;
+      color:rgb(65,65,65);
+  }
+  }
+}
+
+body > #root > div {
+  height: 100vh;
+}
+ 
+h1,
+h2,
+h3 {
+  color: rgb(54, 54, 54);
+}
+h3,h4{
+  font-weight: 400;
+  color: rgb(77, 77, 77)
+}
+.App{
+  background-color: white;
+  transition: all 0.5s ease;
+
+}
+
+
+@import "./player";
+@import './library';
+@import './nav';

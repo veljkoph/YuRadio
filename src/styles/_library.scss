@@ -1,0 +1,140 @@
+.library {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 18rem;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 50px rgb(204, 205, 203);
+  overflow: scroll;
+  overflow-x: hidden;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  opacity: 0;
+  border-radius: 1rem;
+  h1 {
+    text-align: center;
+      margin: 2rem;
+  }
+}
+.library-dark{
+  background-color: rgb(48, 48, 48);
+  box-shadow: none;
+
+}
+
+
+.active-library {
+  transform: translateX(0%);
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+.library-station {
+  display: flex;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  img {
+    width: 35%;
+  }
+  &:hover {
+    background: rgb(222, 222, 255);
+  }
+}
+.library-station-dark{
+  &:hover {
+    background: rgb(217, 217, 221);
+    h3,h4{
+      color: black;
+    }
+  }
+}
+.station-description {
+  padding-left: 1rem;
+  h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 0.7rem;
+  }
+}
+
+.selected {
+  background-color: rgb(181, 181, 253);
+}
+.selected-dark{
+  background-color:#8962b9;
+  &:hover{
+    background-color:#8962b9;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #8962b9 transparent;
+}
+select {
+  position: relative;
+  outline: none;
+  width: 95%;
+  margin-top: 1rem;
+  background-color: rgb(255, 255, 255);
+  font-size: 1rem;
+  color: rgb(65, 65, 65);
+  border-radius: 0.4rem;
+  border: none;
+  margin-bottom: 1rem;
+  text-align-last:center;
+  
+}
+.inputs{
+display: flex;
+flex-direction: row;
+}
+input{
+  width: 95%;
+  height: 2rem;
+  border-radius: 0.4rem;
+  text-align-last:center;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 0 !important;
+  background: white;
+  align-items: center;
+  
+}
+
+.select-dark{
+  color: white;
+  background-color: rgb(65, 65, 65);
+}
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color:#c3acdf;
+  border-radius: 20px;
+  border: transparent;
+}
+@media screen and(max-width:756px) {
+ h2,h3,h4{
+   font-size: 2rem;
+ }
+  .library{
+    width: 100%;
+  }
+  .station-description {
+    padding-left: 1rem;
+    h3 {
+      font-size: 1.1rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+  }
+
+}
