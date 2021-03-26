@@ -136,5 +136,16 @@ input{
       font-size: 1rem;
     }
   }
-
+.library-station {
+    display: flex;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    img {
+      width: 30%;
+      height: 30%;
+    }
+    &:hover {
+      background: rgb(222, 222, 255);
+    }
+  }
 }
